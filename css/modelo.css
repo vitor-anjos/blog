@@ -1,20 +1,32 @@
-body {
+* {
 	margin:0;
-	background-image: url(../imagens/fundo.jpg);
+    padding: 0;
 }
-
+/*header*/
+#logo{
+    width: 4vw;
+    float: left;
+    position: fixed;
+    top: 0.4vw;
+    left: 2vw;
+}
+/*nav*/
 ul {
+    position: fixed;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background: rgba(53, 52, 52, 0.1);
     position: fixed;
-    top: 0;
-    width: 100%;
+    width: 100vw;
+    height: 5vw;
 }
 li {
-	width: 25%;
+    position: relative;
+    left: 75vw;
+    top: 1vw;
+	width: 10vw;
     float: left;
 }
 
@@ -22,10 +34,150 @@ ul a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: .5vw 3vw;
     text-decoration: none;
 }
+/*article*/
+.link{
+    text-decoration: none;
+    font-family: arial;
+    font-size: 3.5vw;
+    color: white;
+}
+.item1{
+    padding: 1.2vw;
+}
+#fundo1{
+    position: relative;
+    top: 13vw;
+    left: 20vw;
+    height: 15vw;
+    width: 30vw;
+    background: rgba(53, 52, 52, 0.2);
 
-li a:hover {
-    background-color: rgba(53, 52, 52);
+}
+#fundo2{
+    position: relative;
+    top: 15vw;
+    left: 20vw;
+    height: 15vw;
+    width: 30vw;
+    background: rgba(53, 52, 52, 0.2);
+
+}
+/*aside*/
+#escudo{
+    float: right;
+    width: 25vw;
+    position: relative;
+    bottom: 17vw;
+    right: 10vw;
+}
+/*sections*/
+#home{
+    background-color: #8c8c8c;
+    height: 62.5vw;
+}
+h1{
+    font-family: arial;
+    padding-top: 5vw;
+    text-align: center;
+}
+h4{
+    font-family: arial;
+    padding-top: 1vw;
+    text-align: center;
+}   
+
+#gal{
+    background-color: #999999;
+    height: 70vw; 
+}
+#galeria{
+    margin-top: 4vw;  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.fotos{
+    margin: 2vw;
+    width: 25vw;
+    height: 22vw;
+}
+/*footer*/
+footer{
+    height: 2vw;
+    background: rgba(53, 52, 52);
+}
+#nome{
+    text-align: center;
+    color: white;
+    padding-top: .4vw;
+}
+
+
+@media (min-width: 320px) and (max-width: 999px) {
+    ul{
+        height: 20vw;
+    }
+    li {
+        font-size: 4vw;
+    }
+    #um{
+        margin-left: .2vw;
+    }
+    #dois{
+        margin-top: 2vw;
+        margin-right: 100vw;
+    }
+    #logo{
+        width: 20vw;
+    }
+    #home{
+        height: 110vw;
+    }
+    h1{
+        font-size: 5vw;
+    }
+    h4{
+        font-size: 4vw;
+    } 
+    #gal{
+        height: 190vw; 
+    }
+    #fundo1{
+        top: 20vw;
+        left: 30vw; 
+        height: 25vw;
+        width: 40vw;
+    }
+    #fundo2{
+        top: 25vw;
+        left: 30vw; 
+        height: 25vw;
+        width: 40vw;
+    }
+    #escudo{
+        top: 27vw;
+        right: 40vw;
+    }
+    #galeria{
+        margin-top: 4vw;  
+        display: flex;
+        flex-direction: column;
+    }
+    .fotos{
+        margin: 2vw;
+        width: 60vw;
+        height: 22vw;
+    }
+    footer{
+        height: 10vw;
+    }
+    #nome{
+        font-size: 6vw;
+        padding-top: 1.2vw;
+    }
 }
